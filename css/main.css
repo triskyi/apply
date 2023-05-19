@@ -1,0 +1,391 @@
+body{
+    background-color:whitesmoke;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: #023047;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    color: #caf0f8;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: #f9f9f9;
+  min-width: 150px;
+  z-index: 1;
+  display: none;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+.logo{
+    color: #caf0f8;
+}
+.container-fluid{
+  margin-top: 70px 
+}
+
+.flyin{
+  animation: moveDiv 2s forwards;
+  text-align: center;
+}
+.fly{
+  
+  color: grey;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 15s;
+}
+.fly:hover{
+  color: #1b263b;
+  text-decoration: none;
+  
+}
+.book{
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.whead1{
+    text-align: center;
+    font-size: 100px;
+    color: #ee9b00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.whead2{
+    text-align: center;
+    font-size: 50px;
+    color: skyblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+        animation-name: example2;
+        animation-duration: 3s;  
+        animation-delay: 2s;
+        animation-fill-mode: both;
+      
+
+}
+
+
+.whead3{
+    text-align: center;
+    color:#1b263b;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.whead4{
+    text-align: center;
+    font-size: 40px;
+    color: #ab4012;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman';
+}
+.whead5{
+  
+  color:#b0bacd;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font: bold;
+  margin-top: 10px;
+  
+}
+.whead5:hover{
+  color:white;
+}
+
+
+
+
+p{
+  color: #f39430;
+  font: bold;
+  
+}
+
+
+@keyframes moveDiv {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes example1 {
+   0%   { opacity:0; }
+  50% { opacity:1; }
+  0%   { left:0px; top:0px;}
+  50%  {color:yellow; left:200px; top:0px;}
+  100% { left:0px; top:0px;}
+  
+}
+
+
+
+@keyframes example2 {
+    from {top: 0px; background-color: #00a6fb;}
+    to {top: 50px; background-color: #003554;}
+  }
+
+  @keyframes moveDiv {
+    0% { left: 0; }
+    50% { left: calc(50% - 50px); }
+    100% { left: 0; }
+  }
+
+  @keyframes moveDiv1 {
+    0% { right: 0; }
+    50% { right: calc(50% - 50px); }
+    100% { right: 0; }
+  }
+
+.col-lg-6{
+    transition: transform 0.3s ease-in-out;
+    margin-left: 40px;
+    border-style: groove;
+    border-radius: 20px;
+    background-color:   #eae2b7;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.col-lg-5{
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
+  border-style: groove;
+  border-radius: 20px;
+  background-color: #eae2b7;
+  opacity: 0;
+      transition: opacity 0.5s;;
+}
+
+.col-lg-5:hover{
+  transform: scale(1.05);
+  background-color:   #343a40;
+  color: #90e0ef;
+  cursor: pointer;
+  opacity: 0.8;
+  
+
+}
+.col-lg-6:hover{
+  transform: scale(1.05);
+  background-color:#343a40 ;
+  color:#90e0ef ;
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+
+
+
+.show {
+  opacity: 0.8;
+}
+
+.miH{
+  text-align: center;
+  font-size: 100px;
+  color: #ee9b00;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.footer {
+  background-color: #023047;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color:#f8f9fa;
+  text-decoration: none;
+  list-style-type: style line;;
+}
+
+.footer-form .form-control {
+  border-radius: 0;
+}
+.myfooter{
+  color: #00a6fb;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .footer-form {
+    margin-top: 30px;
+  }
+}
+
+
+/* search button*/
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  background: #ee9b00;
+  border-radius:25px ;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+
+
+.testimonial-card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .card-body {
+  padding: 1.5rem;
+}
+
+.testimonial-card .card-title {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card .card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.testimonial-card .card-img-top {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.animated-card {
+  animation: pulseAnimation 3s infinite;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
